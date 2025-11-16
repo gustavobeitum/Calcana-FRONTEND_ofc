@@ -292,16 +292,16 @@ export function Propriedades({ userRole }: PropriedadesProps) {
                           <SelectContent>
                             {cidades.map(c => (
                               <SelectItem key={c.idCidade} value={String(c.idCidade)} textValue={`${c.nome} - ${c.uf}`} className="cursor-pointer w-full">
-                                <div className="flex items-center justify-between w-full gap-2 pr-2">
-                                  <span className="truncate font-normal">{c.nome} - {c.uf}</span>
-                                  <div 
-                                    className="shrink-0 p-1.5 rounded-md hover:bg-red-100 text-muted-foreground hover:text-red-600 transition-colors z-50"
-                                    onPointerDown={(e) => requestDelete(e, 'cidade', c.idCidade, c.nome)}
-                                    title="Excluir cidade"
-                                  >
-                                    <Trash2 className="w-4 h-4" />
+                                  <div className="flex items-center w-full gap-2 pr-2">
+                                    <span className="truncate font-normal">{c.nome} - {c.uf}</span>
+                                    <div 
+                                      className="shrink-0 p-1.5 rounded-md hover:bg-red-200 text-muted-foreground hover:text-red-600 transition-colors z-50"
+                                      onPointerDown={(e) => requestDelete(e, 'cidade', c.idCidade, c.nome)}
+                                      title="Excluir cidade"
+                                    >
+                                      <Trash2 className="w-4 h-4" />
+                                    </div>
                                   </div>
-                                </div>
                               </SelectItem>
                             ))}
                           </SelectContent>
