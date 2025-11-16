@@ -126,7 +126,7 @@ export function Historico({ userRole }: HistoricoProps) {
     if (filtros.dataFim) params.append("dataFim", filtros.dataFim); 
  
     params.append("page", String(page)); 
-    params.append("size", "10"); 
+    params.append("size", "5"); 
  
     try { 
       const response = await api.get<ApiResponse<Analise>>(`/analises?${params.toString()}`); 

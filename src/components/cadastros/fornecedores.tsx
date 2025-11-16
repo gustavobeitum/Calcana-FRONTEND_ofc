@@ -74,7 +74,7 @@ export function Fornecedores({ userRole }: FornecedoresProps) {
       const params = new URLSearchParams();
       params.append("status", statusFilter);
       params.append("page", String(page));
-      params.append("size", "5");
+      params.append("size", "11");
       
       if (search) {
         params.append("search", search);

@@ -68,7 +68,7 @@ export function Propriedades({ userRole }: PropriedadesProps) {
       const propsParams = new URLSearchParams();
       propsParams.append("status", statusFilter);
       propsParams.append("page", String(page));
-      propsParams.append("size", "5");
+      propsParams.append("size", "11");
       if (search) {
         propsParams.append("search", search);
       }
